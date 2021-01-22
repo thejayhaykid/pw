@@ -1,7 +1,8 @@
 import React from "react";
+import styles from './Card.module.scss';
 
 const Card = () => {
-  return <Div>I am a card</Div>;
+  return <div className={styles.Card}>I am a card</div>;
 };
 
 export default Card;

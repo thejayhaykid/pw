@@ -7,12 +7,12 @@ import {
 import PasswordGenerator from "./pages/passwordGenerator/passwordGenerator";
 import Home from "./pages/Home/Home";
 import Nav from "./components/Nav/Nav";
-import Styles from "./App.module.scss";
+import styles from "./App.module.scss";
 import NoMatch from "./pages/404/404";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Router>
         <Nav />
         <Switch>

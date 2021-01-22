@@ -1,5 +1,12 @@
-@import "./sass/Main.module.scss";
+@import "./sass/index.module.scss";
 
-body {
-    background-color: $primary-bg;
+Body {
+  background-color: $primary-bg-color;
+  color: $primary-text-color;
+}
+
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 }

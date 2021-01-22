@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React/*, { useState }*/ from "react";
 
 const PasswordGenerator = () => {
   // const [lowers, updateLowers] = useState(true);
