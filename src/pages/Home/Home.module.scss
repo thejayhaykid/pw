@@ -1,6 +1,13 @@
 @import "../../sass/index.module.scss";
 
-.header {
-  // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: aqua;
+.home {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-left: 15%;
+  margin-right: 15%;
+  .header {
+    color: $primary-text-color;
+    justify-self: center;
+    align-self: center;
+  }
 }

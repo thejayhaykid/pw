@@ -1,4 +1,5 @@
 import React/*, { useState }*/ from "react";
+import styles from './passwordGenerator.module.scss';
 
 const PasswordGenerator = () => {
   // const [lowers, updateLowers] = useState(true);
@@ -11,8 +12,9 @@ const PasswordGenerator = () => {
   // const [desiredLength, updateDesiredLength] = useState(20);
 
   return (
-    <div>
+    <div className={styles.generator}>
       <h1>Password Generator</h1>
+      <h3>Still under construction</h3>
     </div>
   );
 };

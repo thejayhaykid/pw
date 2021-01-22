@@ -6,20 +6,20 @@ import {
 } from "react-router-dom";
 import PasswordGenerator from "./pages/passwordGenerator/passwordGenerator";
 import Home from "./pages/Home/Home";
-import Nav from "./components/Nav/Nav";
+// import Nav from "./components/Nav/Nav";
 import styles from "./App.module.scss";
-import NoMatch from "./pages/404/404";
+import NoMatch from "./pages/404/NoMatch";
 
 const App = () => {
   return (
     <div className={styles.App}>
       <Router>
-        <Nav />
+        {/*<Nav />*/}
         <Switch>
           <Route path="/pw">
             <PasswordGenerator />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="*">

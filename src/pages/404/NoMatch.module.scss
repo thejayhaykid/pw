@@ -1,6 +1,6 @@
 @import "../../sass/index.module.scss";
 
-.generator {
+.fourOFour {
   display: flex;
   flex-flow: column nowrap;
   width: 100vw;
@@ -9,7 +9,7 @@
   justify-content: center;
 
   h1,
-  h3 {
+  a {
     align-self: center;
   }
 }

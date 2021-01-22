@@ -5,11 +5,11 @@ import Card from "../../components/Card/Card";
 
 const Home = () => {
   return (
-    <div>
-      <h1 className={styles.header}>Home</h1>
+    <div className={styles.home}>
+      <h1 className={styles.header}>Utilities</h1>
       <div>
         <Link to="/pw">
-          <Card></Card>
+          <Card title="Password Generator" />
         </Link>
       </div>
     </div>
