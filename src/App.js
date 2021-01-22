@@ -2,7 +2,8 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route /** , Link*/,
+  Route, /** , Link*/
+  Redirect,
 } from "react-router-dom";
 import PasswordGenerator from "./pages/passwordGenerator/passwordGenerator";
 import Home from "./pages/Home/Home";
@@ -19,11 +20,14 @@ const App = () => {
           <Route path="/pw">
             <PasswordGenerator />
           </Route>
+          <Route path="/404">
+            <NoMatch />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
           <Route path="*">
-            <NoMatch />
+            <Redirect to="/404" />
           </Route>
         </Switch>
       </Router>
