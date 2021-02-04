@@ -1,0 +1,24 @@
+@mixin background-gradient {
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(123.27deg, #32323a 0%, #16161a 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(123.27deg, #32323a 0%, #16161a 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(123.27deg, #32323a 0%, #16161a 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0, #32323a),
+    color-stop(1, #16161a)
+  );
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(
+    123.27deg,
+    #32323a 0%,
+    #16161a 100%
+  );
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(123.27deg, #32323a 0%, #16161a 100%);
+}

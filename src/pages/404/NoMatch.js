@@ -6,7 +6,7 @@ const NoMatch = () => {
   return (
     <div className={styles.fourOFour}>
       <h1>Looks like you're lost</h1>
-      <Link exact path="/">Return Home</Link>
+      <Link to="/">Return Home</Link>
     </div>
   );
 };

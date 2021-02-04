@@ -1,4 +1,6 @@
 import React/*, { useState }*/ from "react";
+import { Link } from 'react-router-dom';
+import Nav from "../../components/Nav/Nav";
 import styles from './passwordGenerator.module.scss';
 
 const PasswordGenerator = () => {
@@ -13,8 +15,10 @@ const PasswordGenerator = () => {
 
   return (
     <div className={styles.generator}>
+      <Nav />
       <h1>Password Generator</h1>
       <h3>Still under construction</h3>
+      <Link to="/">Return Home</Link>
     </div>
   );
 };
